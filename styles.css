@@ -30,6 +30,7 @@ p{
 }
 /***NAVIGATION***/
 nav ul{
+    font-family: 'Open sans', sans-serif;
     list-style: none;
     text-align: center;
     margin: -12px auto 5px auto;
@@ -102,6 +103,11 @@ img{
 
 }
 /***CONTACT***/
+#contact-info{
+  font-family: 'Open sans', sans-serif;
+  background-color: skyblue;
+  padding: 20px;
+}
 #contact-info ul{
   list-style: none;
   text-align: center;
