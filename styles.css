@@ -39,6 +39,7 @@ nav ul{
     border-bottom: .5px solid #000;
     background-color: #f2f2f2;
 
+
 }
 nav li{
     display: inline;
@@ -60,14 +61,21 @@ a.active{
     color: powderblue;
 }
 
-/***HEADER***/
-header{
+/***HEADERS***/
+#page-header{
     margin-top: -50px;
     margin-bottom: 10px;
     padding: 10px 15px;
     height: 100%;
     background-color: skyblue;
     color: #fff;
+
+}
+#blog-header{
+    background-color: white;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /***FOOTER***/
 footer{
@@ -75,6 +83,7 @@ footer{
     font-size: .5em;
     text-align: center;
     margin-bottom: -50px;
+    clear: both;
 }
 footer a{
     text-decoration: none;
@@ -84,16 +93,38 @@ footer a{
     padding-left: 15px;
 }
 /***ARTICLES***/
+#blog article{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+#blog-article1{
+  float: left;
+  margin-left: auto;
+  margin-right: 50px;
+}
+#blog-article2{
+  float: left;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+#blog-article3{
+  float: left;
+  margin-left: 50px;
+  margin-right: auto;
+
+}
 article{
     border-bottom: 2px solid powderblue;
-    padding-top: 10px;
-
 }
 article h2{
     background-color: skyblue;
     margin: 10px auto;
     padding: 15px;
     color: white;
+
 }
 
 img{
@@ -128,7 +159,7 @@ img{
   color: #000;
   font-weight: 100;
   padding: 6px 18px 6px 18px;
-    background-color: white;
+  background-color: white;
 
 }
 #contact-info a:hover{
