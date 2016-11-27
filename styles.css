@@ -27,6 +27,7 @@ p{
       margin: 10px auto 20px auto;
       padding: 20px 35px;
       background-color: white;
+      border-radius: 8px;
 }
 /***NAVIGATION***/
 nav ul{
@@ -38,6 +39,7 @@ nav ul{
     border-top: 2px solid #000;
     border-bottom: .5px solid #000;
     background-color: #f2f2f2;
+
 
 }
 nav li{
@@ -60,14 +62,30 @@ a.active{
     color: powderblue;
 }
 
-/***HEADER***/
-header{
+/***HEADERS***/
+#page-header{
     margin-top: -50px;
     margin-bottom: 10px;
     padding: 10px 15px;
     height: 100%;
     background-color: skyblue;
     color: #fff;
+
+}
+#blog-header{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#contact-header{
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 /***FOOTER***/
 footer{
@@ -75,6 +93,7 @@ footer{
     font-size: .5em;
     text-align: center;
     margin-bottom: -50px;
+    clear: both;
 }
 footer a{
     text-decoration: none;
@@ -84,53 +103,101 @@ footer a{
     padding-left: 15px;
 }
 /***ARTICLES***/
+#about-me-article p{
+  max-width: 940px;
+
+}
+#blog article{
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  }
+#blog-article1{
+  float: left;
+  margin-left: auto;
+  margin-right: 50px;
+}
+#blog-article2{
+  float: left;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+#blog-article3{
+  float: right;
+  margin-left: 50px;
+  margin-right: auto;
+
+}
+#blog article p:hover{
+    transform-origin: bottom;
+    transition: .5s;
+    opacity: 0.5;
+  }
+
 article{
     border-bottom: 2px solid powderblue;
-    padding-top: 10px;
-
 }
 article h2{
     background-color: skyblue;
     margin: 10px auto;
     padding: 15px;
     color: white;
+
 }
 
 img{
     border-radius: 100%;
     margin: 10px auto 10px auto;
-    box-shadow: 10px 10px 5px #888;
+
 
 }
 /***CONTACT***/
-#contact-info{
-  font-family: 'Open sans', sans-serif;
-  background-color: skyblue;
-  padding: 20px;
+div #contact-info{
+  clear: both;
 }
-#contact-info ul{
-  list-style: none;
+form{
+  max-width: 800px;
   text-align: center;
-  margin: 10px auto;
-
+  margin: 20px auto;
 }
-#contact-info li{
-  text-decoration: none;
-  display: inline;
-  padding: 10px;
-
-  margin-right: 10px;
-
+input, textarea{
+  border: 0;
+  outline:0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width:100%;
+  margin: 1em;
+  font-family: 'Open Sans',sans-serif;
+  box-shadow:(0 1px 1px rgba(0,0,0,0.1));
+  resize: none;
 }
-#contact-info a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 100;
-  padding: 6px 18px 6px 18px;
-    background-color: white;
-
+input:focus{
+  box-shadow: 0px 0px 2px skyblue;
 }
-#contact-info a:hover{
-  box-shadow:   0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+#input-submit{
+  color: white;
+  background-color: powderblue;
+  cursor: pointer;
+}
+#input-submit:hover{
+  box-shadow: 0 2px 1px 1px #888;
+}
+#input-submit:active{
+  box-shadow:  0 0px 0px 0px #888;
+transform: translateY(4px);
+}
+textarea{
+  height: 126px;
+}
+.left-cf{
+  width: 48%;
+  float: left;
+  margin: 5px;
+}
+.right-cf{
+  float: right;
+  width: 45%;
+  margin-top: 5px;
 }
