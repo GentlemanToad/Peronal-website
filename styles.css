@@ -1,10 +1,10 @@
 /****GENERAL****/
 body{
-    background-color: #eee;
+      background-color: #eee;
 }
 .wrapper{
-    margin: 0px auto 10px auto;
-    padding: 20px;
+      margin: 0px auto 10px auto;
+      padding: 20px;
 }
 .Content{
       text-align: center;
@@ -22,13 +22,19 @@ h2{
      font-weight: 100;
      text-align: center;
 }
-p{
-      font-family: 'Open sans', sans-serif;
-      margin: 10px auto 20px auto;
-      padding: 20px 35px;
-      background-color: white;
-      border-radius: 8px;
+img{
+    border-radius: 100%;
+    margin: 10 auto 10 auto;
+    opacity: 20%;
 }
+p{
+    font-family: 'Open sans', sans-serif;
+    margin: 10px auto 20px auto;
+    padding: 20px 35px;
+    background-color: white;
+    border-radius: 8px;
+}
+
 /***NAVIGATION***/
 nav ul{
     font-family: 'Open sans', sans-serif;
@@ -80,12 +86,12 @@ a.active{
     text-transform: uppercase;
 }
 #contact-header{
-  background-color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 /***FOOTER***/
 footer{
@@ -102,37 +108,64 @@ footer a{
     font-weight:100;
     padding-left: 15px;
 }
+footer span{
+    margin-left: 8px;
+}
 /***ARTICLES***/
 #about-me-article p{
-  max-width: 940px;
+    max-width: 940px;
 
 }
 #blog article{
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
-  margin-bottom: 20px;
+    max-width: 940px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: transparent;
+    border-radius: 8px;
   }
+
 #blog-article1{
-  float: left;
-  margin-left: auto;
-  margin-right: 50px;
+    float: left;
+    width:30%;
+    margin-left: auto;
+    border-bottom: none;
 }
-#blog-article2{
-  float: left;
-  margin-left: 75px;
-  margin-right: 75px;
-}
-#blog-article3{
-  float: right;
-  margin-left: 50px;
-  margin-right: auto;
+#blog-article1 p{
+    background-image: url(/Users/Tish/Desktop/Personal-website/images/article-one-bg.jpeg);
+    background-size: 440px 300px;
+    background-repeat: no-repeat;
 
 }
+#blog-article2{
+    float: left;
+    width:30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: none;
+}
+#blog-article2 p{
+    background-image: url(/Users/Tish/Desktop/Personal-website/images/article-two-bg.jpg);
+    background-size: 440px 300px;
+    background-repeat: no-repeat;
+}
+#blog-article3{
+    float: right;
+    width:30%;
+    margin-right: auto;
+    border-bottom: none;
+
+}
+#blog-article3 p{
+    background-image: url(/Users/Tish/Desktop/Personal-website/images/article-three-bg.jpg);
+    background-size: 440px 300px;
+    background-repeat: no-repeat;
+}
 #blog article p:hover{
-    transform-origin: bottom;
-    transition: .5s;
+    transition: .2s;
     opacity: 0.5;
+    color: black;
+
   }
 
 article{
@@ -146,58 +179,53 @@ article h2{
 
 }
 
-img{
-    border-radius: 100%;
-    margin: 10px auto 10px auto;
-
-
-}
 /***CONTACT***/
 div #contact-info{
-  clear: both;
+    clear: both;
+    margin: 20px auto;
 }
 form{
-  max-width: 800px;
-  text-align: center;
-  margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
 }
 input, textarea{
-  border: 0;
-  outline:0;
-  padding: 1em;
-  border-radius: 8px;
-  display: block;
-  width:100%;
-  margin: 1em;
-  font-family: 'Open Sans',sans-serif;
-  box-shadow:(0 1px 1px rgba(0,0,0,0.1));
-  resize: none;
+    border: 0;
+    outline:0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width:100%;
+    margin: 1em;
+    font-family: 'Open Sans',sans-serif;
+    box-shadow:(0 1px 1px rgba(0,0,0,0.1));
+    resize: none;
 }
 input:focus{
-  box-shadow: 0px 0px 2px skyblue;
+    box-shadow: 0px 0px 2px skyblue;
 }
 #input-submit{
-  color: white;
-  background-color: powderblue;
-  cursor: pointer;
+    color: white;
+    background-color: powderblue;
+    cursor: pointer;
 }
 #input-submit:hover{
-  box-shadow: 0 2px 1px 1px #888;
+    box-shadow: 0 2px 1px 1px #888;
 }
 #input-submit:active{
-  box-shadow:  0 0px 0px 0px #888;
-transform: translateY(4px);
+    box-shadow:  0 0px 0px 0px #888;
+    transform: translateY(4px);
 }
 textarea{
-  height: 126px;
+    height: 126px;
 }
 .left-cf{
-  width: 48%;
-  float: left;
-  margin: 5px;
+    width: 48%;
+    float: left;
+    margin: 5px;
 }
 .right-cf{
-  float: right;
-  width: 45%;
-  margin-top: 5px;
+    float: right;
+    width: 42%;
+    margin-top: 5px;
 }
