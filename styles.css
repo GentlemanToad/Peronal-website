@@ -1,6 +1,60 @@
 /****GENERAL****/
 body{
-      background-color: #eee;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    max-width: 940;
+
+}
+.img-container{
+    max-width: 500px;
+    max-height: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+.social-logo{
+  width: 25%;
+  margin-top: 15%;
+
+}
+.head-shot{
+  width: 50%;
+}
+img#myFace{
+  border-radius: 100%;
+  filter: grayscale(25%);
+}
+img#fbLogo{
+  border-radius:100%;
+
+}
+
+::selection{
+    background-color: #fd9631;
+}
+.top-container{
+    background-color: #ff9633;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    clear: both;
+
+}
+.logo{
+    display: inline;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+a.logo{
+    text-decoration: none;
+    color: #888;
+    padding-right: 15px;
+}
+a.logo:hover{
+    color: #888;
+}
+span.dev{
+    font-family: 'Raleway', sans-serif;
 }
 .wrapper{
       margin: 0px auto 10px auto;
@@ -10,73 +64,68 @@ body{
       text-align: center;
       margin: 10px 120px;
 }
+h1,h2,h3{
+  font-family: 'Raleway',sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
 h1{
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 100;
-     text-align: center;
      text-transform: uppercase;
+}
 
-}
-h2{
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 100;
-     text-align: center;
-}
-img{
-    border-radius: 100%;
-    margin: 10 auto 10 auto;
-    opacity: 20%;
-}
+
 p{
     font-family: 'Open sans', sans-serif;
     margin: 10px auto 20px auto;
-    padding: 20px 35px;
+    /*padding: 20px 35px;*/
     background-color: white;
     border-radius: 8px;
 }
 
 /***NAVIGATION***/
-nav ul{
-    font-family: 'Open sans', sans-serif;
+.navigation{
+  float: right;
+  padding: 10px;
+
+}
+.navigation ul{
+    font-family: 'Raleway', sans-serif;
     list-style: none;
-    text-align: center;
-    margin: -12px auto 5px auto;
-    padding: 10px 25px;
-    border-top: 2px solid #000;
-    border-bottom: .5px solid #000;
-    background-color: #f2f2f2;
-
-
+    margin: 0px auto 10px auto;
 }
-nav li{
+.navigation li{
     display: inline;
-    padding: 10px 35px
+    padding: 0px 35px
 }
-nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 100;
+.navigation a{
     padding: 6px 18px 6px 18px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #888;
+    font-size: 24px;
 
 }
-a:hover, a.on{
-    color:powderblue;
+
+a:hover, a.on, a.active{
+    color:white;
 }
 
-a.active{
-    color: powderblue;
-}
 
 /***HEADERS***/
 #page-header{
-    margin-top: -50px;
     margin-bottom: 10px;
     padding: 10px 15px;
-    height: 100%;
-    background-color: skyblue;
     color: #fff;
+    font-size: 48px;
 
+}
+p.subheader{
+  background-color: transparent;;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 15px;
+  color:#fff;
 }
 #blog-header{
     background-color: white;
@@ -100,6 +149,7 @@ footer{
     text-align: center;
     margin-bottom: -50px;
     clear: both;
+    padding: 15px;
 }
 footer a{
     text-decoration: none;
@@ -115,6 +165,7 @@ footer span{
 #about-me-article p{
     max-width: 940px;
 
+
 }
 #blog article{
     max-width: 940px;
@@ -123,6 +174,8 @@ footer span{
     margin-bottom: 20px;
     color: transparent;
     border-radius: 8px;
+    cursor: pointer;
+
   }
 
 #blog-article1{
@@ -169,20 +222,22 @@ footer span{
   }
 
 article{
-    border-bottom: 2px solid powderblue;
+    border-bottom: 2px solid #ff9633;
+
 }
 article h2{
-    background-color: skyblue;
+    background-color: #4d4d4d;
     margin: 10px auto;
     padding: 15px;
     color: white;
-
 }
+
 
 /***CONTACT***/
 div #contact-info{
     clear: both;
     margin: 20px auto;
+    border-top: 2px solid #ff9633;
 }
 form{
     max-width: 800px;
@@ -206,7 +261,7 @@ input:focus{
 }
 #input-submit{
     color: white;
-    background-color: powderblue;
+    background-color: #ff9633;
     cursor: pointer;
 }
 #input-submit:hover{
